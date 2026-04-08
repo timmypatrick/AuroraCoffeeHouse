@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Aurora Coffee House || About</title>
+  </head>
+  <body>
+    <!-- Header Section  -->
+    <header>
+      <!-- Hamburger To Open And Close Nav Bar -->
+      <section class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+
+      <!-- Company Logo -->
+      <section class="logo_container">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo" />
+        </a>
+        <h4 class="company_quote">Coffee first, everything else...</h4>
+      </section>
+    </header>
+
+    <!-- Nav Bar -->
+    <nav class="nav">
+      <ul>
+        <li class="barren_link">
+          <a href="index.html">Home</a>
+        </li>
+
+        <li class="barren_link">
+          <a href="about.html">About</a>
+        </li>
+
+        <li class="barren_link">
+          <a href="menu.html">Menu</a>
+        </li>
+
+        <li class="barren_link">
+          <a href="gallery.html">Gallery</a>
+        </li>
+
+        <li class="barren_link">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Primary Page Content -->
+    <main class="main_body">
+      <!-- Hero Section -->
+
+      <section class="about_hero" id="about_mobile_hero">
+        <div class="dark_about_hero">
+          <h1>
+            <span>P</span
+            ><span>remium Coffee Crafted with Precision and Excellence</span>
+          </h1>
+          <div class="product_solution_wrapper">
+            <a href="menu.html">
+              <span>Our Menu</span>
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about_hero" id="about_desktop_hero">
+        <div class="dark_about_hero">
+          <h1>
+            <span>P</span
+            ><span>remium Coffee Crafted with Precision and Excellence</span>
+          </h1>
+          <div class="product_solution_wrapper">
+            <a href="menu.html">
+              <span>Our Menu</span>
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Counter Section -->
+
+      <section id="stats" class="about_counter_wrapper">
+        <div class="stat">
+          <h2>
+            <span class="about_counter" data-target="55">0</span><span>+</span>
+          </h2>
+          <p>Projects Completed</p>
+        </div>
+
+        <div class="stat">
+          <h2>
+            <span class="about_counter" data-target="15">0</span><span>+</span>
+          </h2>
+          <p>Happy Clients</p>
+        </div>
+
+        <div class="stat">
+          <h2>
+            <span class="about_counter" data-target="11">0</span><span>+</span>
+          </h2>
+          <p>Business Partners</p>
+        </div>
+
+        <div class="stat">
+          <h2>
+            <span class="about_counter" data-target="20">0</span><span>+</span>
+          </h2>
+          <p>IT Consultant</p>
+        </div>
+      </section>
+
+      <!-- About Our Company -->
+
+      <section class="about_details">
+        <div class="about_details_pic">
+          <img src="images/company.jpg" alt="Image" />
+        </div>
+        <div class="about_details_text">
+          <div class="about_head">About Our Company</div>
+          <div class="about_body">
+            Aurora Coffee House is a value-driven coffee brand committed to
+            delivering premium-quality coffee, exceptional sourcing standards,
+            and a refined customer experience to coffee lovers across every
+            moment of their day. We serve as a trusted destination for
+            individuals seeking authentic flavor, consistent quality, and a
+            welcoming atmosphere—ensuring every cup reflects craftsmanship,
+            care, and excellence. With a deep appreciation for ethically sourced
+            beans, precise roasting techniques, and modern brewing methods,
+            Aurora goes beyond traditional coffee service. Our team combines
+            passion with expertise to offer curated blends, personalized
+            service, and a warm environment that inspires connection,
+            creativity, and comfort. From your first sip to your last, we are
+            dedicated to making every coffee experience memorable and
+            satisfying.
+          </div>
+        </div>
+      </section>
+
+      <!-- Management Team -->
+      <section class="team">
+        <h2 class="contact_heading">Meet Our Management</h2>
+
+        <div class="axis_product_body">
+          <div class="each_axis_product">
+            <img src="images/md.jpg" alt="Owolabi Desmond" />
+            <div class="camera_name">Owolabi Desmond</div>
+            <div class="camera_description">MD/CEO</div>
+          </div>
+
+          <div class="each_axis_product">
+            <img src="images/accountant.jpg" alt="Accountant" />
+            <div class="camera_name">Arowosaye Daisy</div>
+            <div class="camera_description">Accountant</div>
+          </div>
+
+          <div class="each_axis_product">
+            <img src="images/procurement.png" alt="Procurement Officer" />
+            <div class="camera_name">Lucy Grace</div>
+            <div class="camera_description">Procurement Officer</div>
+          </div>
+
+          <div class="each_axis_product">
+            <img src="images/me.png" alt="Network Camera" />
+            <div class="camera_name">Timmy Patrick</div>
+            <div class="camera_description">IT Personnel</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer><strong>©</strong> 2026 AuroraCoffeeHouse.</footer>
+
+    <script src="js/script.js"></script>
+    <script>
+      // Counter Starts
+
+      let counters = document.querySelectorAll(".about_counter");
+      let started = false;
+
+      function startCounting() {
+        if (started) return;
+
+        counters.forEach((counter) => {
+          let target = +counter.getAttribute("data-target");
+          let count = 0;
+          let speed = target / 100;
+
+          let updateCount = () => {
+            count += speed;
+
+            if (count < target) {
+              counter.textContent = Math.floor(count);
+              requestAnimationFrame(updateCount);
+            } else {
+              counter.textContent = target;
+            }
+          };
+
+          updateCount();
+        });
+
+        started = true;
+      }
+
+      // Trigger when section is visible
+      let section = document.querySelector("#stats");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            startCounting();
+          }
+        },
+        { threshold: 0.5 },
+      );
+
+      observer.observe(section);
+    </script>
+  </body>
+</html>

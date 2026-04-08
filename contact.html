@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Aurora Coffee House || Contact</title>
+  </head>
+  <body>
+    <!-- Header Section  -->
+    <header>
+      <!-- Hamburger To Open And Close Nav Bar -->
+      <section class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+
+      <!-- Company Logo -->
+      <section class="logo_container">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo" />
+        </a>
+        <h4 class="company_quote">Coffee first, everything else...</h4>
+      </section>
+    </header>
+
+    <!-- Nav Bar -->
+    <nav class="nav">
+      <ul>
+        <li class="barren_link">
+          <a href="index.html">Home</a>
+        </li>
+
+        <li class="barren_link">
+          <a href="about.html">About</a>
+        </li>
+
+        <li class="barren_link">
+          <a href="menu.html">Menu</a>
+        </li>
+
+        <li class="barren_link">
+          <a href="gallery.html">Gallery</a>
+        </li>
+
+        <li class="barren_link">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Primary Page Content -->
+    <main class="main_body">
+      <h2 class="contact_heading">
+        <p>Contact Us</p>
+        <audio src="media/aurora.mp3" controls loop>
+          Your browser does not support the audio element.
+        </audio>
+      </h2>
+
+      <div class="axis_product_body">
+        <a
+          href="https://timmypatrick.netlify.app"
+          target="_blank"
+          class="each_axis_product"
+          title="Our Source"
+        >
+          <img
+            src="images/venue.png"
+            alt="Network Camera"
+            style="width: 70px"
+          />
+          <div class="camera_name">Head Office</div>
+          <div class="camera_description">Meet Our Suppliers</div>
+        </a>
+
+        <div class="each_axis_product">
+          <img
+            src="images/email.png"
+            alt="Network Camera"
+            style="width: 70px; margin: 40px 0px 50px"
+          />
+          <div class="camera_name">Email Us</div>
+          <div class="camera_description">timmypatrick999@gmail.com</div>
+        </div>
+
+        <div class="each_axis_product">
+          <img
+            src="images/venue.png"
+            alt="Network Camera"
+            style="width: 70px"
+          />
+          <div class="camera_name">Branch Office</div>
+          <div class="camera_description">
+            No. 1 Asenuga Street, Liasu Road, Ikotun, Lagos. Nigeria.
+          </div>
+        </div>
+
+        <a href="mailto:timmypatrick999@gmail.com" class="each_axis_product">
+          <img
+            src="images/email.png"
+            alt="Network Camera"
+            style="width: 70px; margin: 40px 0px 50px"
+          />
+          <div class="camera_name">Email Us</div>
+          <div class="camera_description">Impromptu Mail</div>
+        </a>
+      </div>
+
+      <!-- User Contact Details -->
+      <form
+        action="https://api.web3forms.com/submit"
+        class="contact_form"
+        method="POST"
+      >
+        <h6>
+          Contact us by completing the form below, the information submitted is
+          securely encrypted and treated with strict confidentiality.
+        </h6>
+
+        <div class="each_data">
+          <div class="data_name">
+            <span>Name In Full</span><span class="star">*</span>
+          </div>
+          <div class="data_field">
+            <input type="text" name="Customer Name" id="state" required />
+          </div>
+        </div>
+
+        <div class="each_data">
+          <div class="data_name">
+            <span>Email</span><span class="star">*</span>
+          </div>
+          <div class="data_field">
+            <input type="email" name="Email" id="email" required />
+            <label for="email">example@example.com</label>
+          </div>
+        </div>
+
+        <div class="each_data">
+          <div class="data_name">
+            <span>Phone Number</span><span class="star">*</span>
+          </div>
+          <div class="data_field">
+            <input type="tel" name="Phone_Number" id="phone_number" required />
+            <label for="phone_number">
+              please enter a valid phone number
+            </label>
+          </div>
+        </div>
+
+        <div class="each_data">
+          <div class="data_name">
+            <span>Subject</span><span class="star">*</span>
+          </div>
+          <div class="data_field">
+            <select name="Subject">
+              <option value="" style="display: none"></option>
+              <option value="General_Inquiry">General Inquiry</option>
+              <option value="Catering">Catering Services</option>
+              <option value="Events">Events & Bookings</option>
+              <option value="Coffee_Menu">Coffee & Menu Inquiry</option>
+              <option value="Orders">Order & Pickup</option>
+              <option value="Visit">Plan a Visit</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="each_data">
+          <div class="data_name">
+            <span>Message</span><span class="star">*</span>
+          </div>
+          <div class="data_field">
+            <textarea name="Message" id="message" required></textarea>
+          </div>
+        </div>
+
+        <!-- API Inputs -->
+        <input type="hidden" name="form_name" value="Customer Details" />
+
+        <input type="hidden" name="subject" value="Aurora Coffee House" />
+
+        <input
+          type="hidden"
+          name="redirect"
+          value="https://timmypatrick.github.io/spineldistribution/contact_greetings.html"
+        />
+
+        <input
+          type="hidden"
+          name="access_key"
+          value="1175cfcf-9915-4426-b9f3-844b0d2bf8ff"
+        />
+
+        <div class="submit_data">
+          <button>Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer><strong>©</strong> 2026 AuroraCoffeeHouse.</footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
